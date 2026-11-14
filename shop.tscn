@@ -1,5 +1,9 @@
 [gd_scene format=3 uid="uid://dnnv20lchrib6"]
 
+[ext_resource type="Texture2D" path="res://Untitled.png" id="1_blqjs"]
+[ext_resource type="Script" uid="uid://tqlkuv5f5585" path="res://button_3.gd" id="2_fgaav"]
+[ext_resource type="Texture2D" uid="uid://ds6ysa0b8olay" path="res://item.png" id="3_6lah5"]
+
 [node name="Shop" type="Control" unique_id=743195835]
 layout_mode = 3
 anchors_preset = 15
@@ -7,3 +11,46 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=2121798084]
+layout_mode = 0
+offset_left = 8.0
+offset_top = -4.0
+offset_right = 1249.0
+offset_bottom = 726.0
+texture = ExtResource("1_blqjs")
+expand_mode = 2
+
+[node name="Button" type="Button" parent="." unique_id=1608853054]
+layout_mode = 0
+offset_left = 732.0
+offset_top = 505.0
+offset_right = 1142.0
+offset_bottom = 559.0
+text = "Wager"
+
+[node name="Button2" type="Button" parent="." unique_id=1713513687]
+layout_mode = 0
+offset_left = 733.0
+offset_top = 567.0
+offset_right = 1143.0
+offset_bottom = 636.0
+text = "Talk"
+
+[node name="Button3" type="Button" parent="." unique_id=28940115]
+layout_mode = 0
+offset_left = 733.0
+offset_top = 435.0
+offset_right = 1143.0
+offset_bottom = 494.0
+text = "Buy"
+script = ExtResource("2_fgaav")
+
+[node name="TextureRect2" type="TextureRect" parent="." unique_id=2134341121]
+layout_mode = 0
+offset_left = 705.0
+offset_top = 183.0
+offset_right = 1070.0
+offset_bottom = 394.0
+texture = ExtResource("3_6lah5")
+expand_mode = 1
