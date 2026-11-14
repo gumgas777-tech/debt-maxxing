@@ -10,4 +10,5 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	pass
 
-when 
+func _on_buy_button_down():
+	pass
