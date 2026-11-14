@@ -1,0 +1,79 @@
+[gd_scene format=3 uid="uid://cpi2pfbwkr0js"]
+
+[ext_resource type="Script" uid="uid://cee3ieo7bwuvm" path="res://main_menu/main_menu.gd" id="1_d3a7t"]
+[ext_resource type="Script" uid="uid://cv6q833kihxo3" path="res://main_menu/start_button.gd" id="2_3shxk"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sdd5f"]
+bg_color = Color(0.050980393, 0.050980393, 0.050980393, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0qatb"]
+bg_color = Color(0.94477344, 0.46344966, 0, 1)
+border_color = Color(0.23874444, 0.23874438, 0.2387442, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pyv22"]
+bg_color = Color(0.74697965, 0.7469797, 0.74697924, 1)
+border_color = Color(0.70519364, 0.7051937, 0.70519334, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[node name="MainMenu" type="Control" unique_id=1407924380]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_d3a7t")
+
+[node name="Start_button" type="Button" parent="." unique_id=1692621267]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -119.0
+offset_top = -37.0
+offset_right = 119.0
+offset_bottom = 37.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_sdd5f")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_0qatb")
+theme_override_styles/hover = SubResource("StyleBoxFlat_pyv22")
+text = "Start game"
+script = ExtResource("2_3shxk")
+
+[node name="Quit_button" type="Button" parent="." unique_id=1828261145]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -118.0
+offset_top = 47.0
+offset_right = 120.0
+offset_bottom = 121.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_sdd5f")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_0qatb")
+theme_override_styles/hover = SubResource("StyleBoxFlat_pyv22")
+text = "Quit game"
+script = ExtResource("2_3shxk")
+
+[connection signal="pressed" from="Start_button" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="Quit_button" to="." method="_on_quit_button_pressed"]

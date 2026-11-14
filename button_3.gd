@@ -2,13 +2,11 @@ extends Button
 
 
 # Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	pass # Replace with function body.
+func _ready():
+	var button = Button.new()
+	button.text = "Click me"
+	button.pressed.connect(_button_pressed)
+	add_child(button)
 
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
-
-func _on_buy_button_down():
-	pass
+func _button_pressed():
+	print("Hello world!")

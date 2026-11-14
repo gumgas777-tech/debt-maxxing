@@ -1,0 +1,66 @@
+[gd_scene format=3 uid="uid://dnnv20lchrib6"]
+
+[ext_resource type="Texture2D" uid="uid://cfeqaxea7n6xe" path="res://shop_stuff/shop.png" id="1_pg7wn"]
+[ext_resource type="Script" uid="uid://dn3odsjsrypgh" path="res://shop_stuff/talk_button.gd" id="2_k870x"]
+[ext_resource type="Script" uid="uid://tqlkuv5f5585" path="res://button_3.gd" id="2_pg7wn"]
+[ext_resource type="Texture2D" uid="uid://ds6ysa0b8olay" path="res://shop_stuff/item.png" id="3_ihqhm"]
+
+[node name="Shop" type="Control" unique_id=743195835]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=2121798084]
+layout_mode = 0
+offset_left = 8.0
+offset_top = -4.0
+offset_right = 1249.0
+offset_bottom = 726.0
+texture = ExtResource("1_pg7wn")
+expand_mode = 2
+
+[node name="Wager_button" type="Button" parent="." unique_id=1608853054]
+layout_mode = 0
+offset_left = 732.0
+offset_top = 505.0
+offset_right = 1142.0
+offset_bottom = 559.0
+text = "Wager"
+
+[node name="Talk_button" type="Button" parent="." unique_id=1713513687]
+layout_mode = 0
+offset_left = 733.0
+offset_top = 567.0
+offset_right = 1143.0
+offset_bottom = 636.0
+text = "Talk"
+script = ExtResource("2_k870x")
+
+[node name="Buy_button" type="Button" parent="." unique_id=28940115]
+layout_mode = 0
+offset_left = 733.0
+offset_top = 435.0
+offset_right = 1143.0
+offset_bottom = 494.0
+text = "Buy"
+script = ExtResource("2_pg7wn")
+
+[node name="TextureRect2" type="TextureRect" parent="." unique_id=2134341121]
+layout_mode = 0
+offset_left = 697.0
+offset_top = 192.0
+offset_right = 1062.0
+offset_bottom = 403.0
+texture = ExtResource("3_ihqhm")
+expand_mode = 1
+
+[node name="TextEdit" type="TextEdit" parent="." unique_id=1026093726]
+layout_mode = 0
+offset_left = 61.0
+offset_top = 413.0
+offset_right = 714.0
+offset_bottom = 637.0
+theme_override_font_sizes/font_size = 30
