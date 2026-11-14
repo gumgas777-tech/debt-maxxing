@@ -1,11 +1,13 @@
 [gd_scene format=3 uid="uid://bmmc771fn5qhl"]
 
-[ext_resource type="Texture2D" uid="uid://cfdga7xo7ycpf" path="res://dante_sprite.png" id="2_itoxf"]
+[ext_resource type="Script" uid="uid://dl3tkgpwbjll" path="res://dante/dante.gd" id="1_lwbdl"]
+[ext_resource type="Texture2D" uid="uid://cfdga7xo7ycpf" path="res://dante/dante_sprite.png" id="2_itoxf"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_jemsq"]
 radius = 47.0
 
 [node name="Node2D" type="CharacterBody2D" unique_id=2026038527]
+script = ExtResource("1_lwbdl")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=496364042]
 texture = ExtResource("2_itoxf")
