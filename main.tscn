@@ -3,6 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://14ncwssh3lhr" path="res://casinofloor.png" id="1_h2yge"]
 [ext_resource type="PackedScene" uid="uid://bmmc771fn5qhl" path="res://dante/dante.tscn" id="2_h2yge"]
 [ext_resource type="Script" uid="uid://yry70ibe76hw" path="res://camera_2d.gd" id="3_h2yge"]
+[ext_resource type="PackedScene" uid="uid://b5tdhlt6ked3i" path="res://Evilguys/evilguy_1.tscn" id="4_1bvp3"]
 
 [node name="Node2D" type="Node2D" unique_id=1539095433]
 
@@ -19,3 +20,5 @@ position = Vector2(635, 330)
 [node name="Camera2D" type="Camera2D" parent="dante" unique_id=1615721821]
 position = Vector2(-6, 14)
 script = ExtResource("3_h2yge")
+
+[node name="Evilguy1" parent="." unique_id=1941640205 instance=ExtResource("4_1bvp3")]
