@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://bmmc771fn5qhl"]
+
+[ext_resource type="Script" uid="uid://dl3tkgpwbjll" path="res://dante/dante.gd" id="1_lwbdl"]
+[ext_resource type="Texture2D" uid="uid://cfdga7xo7ycpf" path="res://dante/dante_sprite.png" id="2_itoxf"]
+[ext_resource type="PackedScene" uid="uid://deafttusoyx5v" path="res://weapons/ranged/ranged.tscn" id="2_wdung"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_jemsq"]
+radius = 47.0
+
+[node name="Node2D" type="CharacterBody2D" unique_id=2026038527]
+script = ExtResource("1_lwbdl")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=496364042]
+texture = ExtResource("2_itoxf")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=324757149]
+shape = SubResource("CircleShape2D_jemsq")
+
+[node name="Gun" parent="." unique_id=859359046 instance=ExtResource("2_wdung")]
+position = Vector2(50, -19)
+rotation = -1.6283922
+scale = Vector2(0.99999994, -0.99999994)
