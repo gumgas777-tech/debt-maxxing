@@ -1,8 +1,7 @@
 [gd_scene format=3 uid="uid://b5tdhlt6ked3i"]
 
 [ext_resource type="Script" uid="uid://l3k0ly7xrg4b" path="res://Evilguys/evilguy_1.gd" id="1_ribqn"]
-[ext_resource type="PackedScene" uid="uid://dnnv20lchrib6" path="res://shop_stuff/shop.tscn" id="2_2l05q"]
-=======
+[ext_resource type="PackedScene" uid="uid://dnnv20lchrib6" path="res://shop_stuff/shop.tscn" id="2_gqjlr"]
 [ext_resource type="Texture2D" uid="uid://drkh3jayql532" path="res://Dicehead and Casino Asset Pack/Enemies/Bottle/Bottle_movement/sprite_01.png" id="2_xev57"]
 [ext_resource type="Texture2D" uid="uid://dtlut5vcfk52s" path="res://Dicehead and Casino Asset Pack/Enemies/Bottle/Bottle_movement/sprite_02.png" id="3_gqjlr"]
 [ext_resource type="Texture2D" uid="uid://dp3e5e1rasnqq" path="res://Dicehead and Casino Asset Pack/Enemies/Bottle/Bottle_movement/sprite_03.png" id="4_7nll3"]
@@ -58,7 +57,7 @@ animations = [{
 
 [node name="Evilguy1" type="CharacterBody2D" unique_id=1941640205]
 script = ExtResource("1_ribqn")
-shop = ExtResource("2_2l05q")
+shop = ExtResource("2_gqjlr")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=765061001]
 shape = SubResource("CircleShape2D_sdd5f")
