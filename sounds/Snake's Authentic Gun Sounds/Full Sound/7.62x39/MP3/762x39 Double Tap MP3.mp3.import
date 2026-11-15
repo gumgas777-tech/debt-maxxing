@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dwaxligtyaexu"
+path="res://.godot/imported/762x39 Double Tap MP3.mp3-84a9cdf9cdf8a762b53d7fc2b1fd89be.mp3str"
+
+[deps]
+
+source_file="res://sounds/Snake's Authentic Gun Sounds/Full Sound/7.62x39/MP3/762x39 Double Tap MP3.mp3"
+dest_files=["res://.godot/imported/762x39 Double Tap MP3.mp3-84a9cdf9cdf8a762b53d7fc2b1fd89be.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

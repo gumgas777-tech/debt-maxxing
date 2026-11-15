@@ -185,13 +185,6 @@ animations = [{
 [node name="Node2D" type="CharacterBody2D" unique_id=2026038527]
 script = ExtResource("1_lwbdl")
 
-<<<<<<< HEAD
-=======
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=496364042]
-scale = Vector2(0.40425533, 0.4042553)
-texture = ExtResource("2_itoxf")
-
->>>>>>> 2707546b0abe0f6b002616e038111d7880dde41e
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=324757149]
 shape = SubResource("CircleShape2D_jemsq")
 

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bcvikiwjqx85h"
+path="res://.godot/imported/556 Burst Isolated MP3.mp3-cfe8a465d59a672b5662580ae6c4cce1.mp3str"
+
+[deps]
+
+source_file="res://sounds/Snake's Authentic Gun Sounds/Isolated/5.56/MP3/556 Burst Isolated MP3.mp3"
+dest_files=["res://.godot/imported/556 Burst Isolated MP3.mp3-cfe8a465d59a672b5662580ae6c4cce1.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

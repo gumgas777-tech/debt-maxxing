@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://4jiol3a50s0y"
+path="res://.godot/imported/Lever Reload MP3.mp3-233c65c11cfda32a3987be6677a683fb.mp3str"
+
+[deps]
+
+source_file="res://sounds/Snake's Authentic Gun Sounds/Reloads, Cycling & More/MP3/Lever Reload MP3.mp3"
+dest_files=["res://.godot/imported/Lever Reload MP3.mp3-233c65c11cfda32a3987be6677a683fb.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
