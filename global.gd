@@ -1,5 +1,19 @@
 extends Control
 
+var money = 0
+var player_health = 100
+
+var crit_chance = 0.01
+var crit_mult = 2
+
+var loot_table = {
+	"common": [
+		"energy_drink", "regen_gem"
+	],
+	"rare": ["ace_of_spades"],
+	"epic": ["last_stand"],
+	"legendary": ["full_house"]
+}
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
