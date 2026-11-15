@@ -3,7 +3,8 @@
 [ext_resource type="Texture2D" uid="uid://cfeqaxea7n6xe" path="res://shop_stuff/shop.png" id="1_pg7wn"]
 [ext_resource type="Script" uid="uid://i6tjie7mm2hd" path="res://global.gd" id="1_sx8d5"]
 [ext_resource type="Script" uid="uid://dn3odsjsrypgh" path="res://shop_stuff/talk_button.gd" id="2_k870x"]
-[ext_resource type="Script" uid="uid://tqlkuv5f5585" path="res://button_3.gd" id="2_pg7wn"]
+[ext_resource type="Script" uid="uid://dm3eptbbp0w63" path="res://button_3.gd" id="2_pg7wn"]
+[ext_resource type="Script" uid="uid://bkfkwg4l0hul4" path="res://shop_stuff/wager_button.gd" id="2_sx8d5"]
 [ext_resource type="Texture2D" uid="uid://ds6ysa0b8olay" path="res://shop_stuff/item.png" id="3_ihqhm"]
 [ext_resource type="PackedScene" uid="uid://f40hom10745p" path="res://shop_stuff/items/items.tscn" id="5_k870x"]
 
@@ -32,6 +33,7 @@ offset_top = 505.0
 offset_right = 1142.0
 offset_bottom = 559.0
 text = "Wager"
+script = ExtResource("2_sx8d5")
 
 [node name="Talk_button" type="Button" parent="." unique_id=1713513687]
 layout_mode = 0

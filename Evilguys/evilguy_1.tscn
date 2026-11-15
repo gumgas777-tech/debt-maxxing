@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://b5tdhlt6ked3i"]
+
+[ext_resource type="Texture2D" uid="uid://bknh3o8p37eq8" path="res://Evilguys/Evilguys.png" id="1_j48bt"]
+[ext_resource type="Script" uid="uid://l3k0ly7xrg4b" path="res://Evilguys/evilguy_1.gd" id="1_ribqn"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_sdd5f"]
+radius = 49.729267
+
+[node name="Evilguy1" type="CharacterBody2D" unique_id=1941640205]
+script = ExtResource("1_ribqn")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=777825979]
+offset_left = -51.0
+offset_top = -51.0
+offset_right = 52.0
+offset_bottom = 51.0
+texture = ExtResource("1_j48bt")
+expand_mode = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=765061001]
+shape = SubResource("CircleShape2D_sdd5f")

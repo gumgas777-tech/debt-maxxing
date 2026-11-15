@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="DamageOverTimeEffect" format=3 uid="uid://c4kfp5jge3rbn"]
+
+[ext_resource type="Script" uid="uid://cg3khqqohlcor" path="res://addons/health-system/modules/effects/damage_over_time_effect.gd" id="1_poison"]
+
+[resource]
+script = ExtResource("1_poison")
+damage_per_tick = 2.0
+id = &"poison"
+duration = 3.0
+tick_interval = 0.5
+tag = &"poisoned"
