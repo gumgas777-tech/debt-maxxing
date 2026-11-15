@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://deafttusoyx5v"]
 
 [ext_resource type="Script" uid="uid://cwmwibe5lq86h" path="res://weapons/ranged/ranged.gd" id="1_64c6a"]
-[ext_resource type="Texture2D" uid="uid://b3saihgvf5o1v" path="res://weapons/ranged/gun/sprite.png" id="2_pp5hj"]
-[ext_resource type="Texture2D" uid="uid://krv23qyiv01e" path="res://weapons/ranged/gun/projectile.png" id="3_30v48"]
+[ext_resource type="Texture2D" uid="uid://ccsf8ffa2lx78" path="res://weapons/ranged/GunsPack/Guns/Revolver.png" id="2_30v48"]
+[ext_resource type="Texture2D" uid="uid://b8fakwdawfecv" path="res://weapons/ranged/GunsPack/Bullets/PistolAmmoBig.png" id="3_30v48"]
 [ext_resource type="Texture2D" uid="uid://7xn5hevukc36" path="res://weapons/ranged/bow/sprite.png" id="4_1gseb"]
 [ext_resource type="Texture2D" uid="uid://1n3riol6s6rk" path="res://weapons/ranged/bow/projectile.png" id="5_metbn"]
 [ext_resource type="PackedScene" uid="uid://citkfm1k7jx4b" path="res://weapons/ranged/projectile.tscn" id="6_30v48"]
@@ -11,7 +11,7 @@
 rotation = 1.5132004
 scale = Vector2(-1, 1)
 script = ExtResource("1_64c6a")
-GUN_TEXTURE = ExtResource("2_pp5hj")
+GUN_TEXTURE = ExtResource("2_30v48")
 GUN_PROJECTILE_TEXTURE = ExtResource("3_30v48")
 BOW_TEXTURE = ExtResource("4_1gseb")
 BOW_PROJECTILE_TEXTURE = ExtResource("5_metbn")
@@ -22,5 +22,5 @@ offset_left = -9.0
 offset_top = -15.0
 offset_right = 23.0
 offset_bottom = 9.0
-texture = ExtResource("2_pp5hj")
+texture = ExtResource("2_30v48")
 expand_mode = 1

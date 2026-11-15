@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://citkfm1k7jx4b"]
 
-[ext_resource type="Texture2D" uid="uid://krv23qyiv01e" path="res://weapons/ranged/gun/projectile.png" id="1_dpwy1"]
 [ext_resource type="Script" uid="uid://ccyvjfrvrem7q" path="res://weapons/ranged/projectile.gd" id="1_w7y0k"]
+[ext_resource type="Texture2D" uid="uid://u5hjpvgaplu2" path="res://weapons/ranged/GunsPack/Bullets/PistolAmmoSmall.png" id="2_w7y0k"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jemsq"]
 size = Vector2(12, 6)
@@ -10,12 +10,14 @@ size = Vector2(12, 6)
 script = ExtResource("1_w7y0k")
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=482933125]
-offset_left = -6.0
-offset_top = -3.0
-offset_right = 6.0
-offset_bottom = 3.0
-texture = ExtResource("1_dpwy1")
+offset_left = -12.0
+offset_top = -10.0
+offset_right = 12.0
+offset_bottom = 10.0
+texture = ExtResource("2_w7y0k")
 expand_mode = 1
+stretch_mode = 5
+metadata/_edit_use_anchors_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1205612093]
 shape = SubResource("RectangleShape2D_jemsq")

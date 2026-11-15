@@ -19,4 +19,5 @@ func _on_timer_timeout() -> void:
 	var new_guy = evil_guy.instantiate()
 	var ran_pos = Vector2(rand.randf_range(100, 1700), rand.randf_range(150, 1650))
 	new_guy.global_position = ran_pos
+	new_guy.dante = $Dante
 	get_tree().current_scene.add_child(new_guy)
