@@ -19,18 +19,18 @@ func _ready() -> void:
 		$TextureRect.texture = BOW_TEXTURE
 		projectile_texture = BOW_PROJECTILE_TEXTURE
 
-var lock_time = 5
+var lock_time = 40
 
 func _process(delta:float):
 	rotation = 0
 	position = Vector2.ZERO
 	rotation = -get_local_mouse_position().angle()
-	position = Vector2.RIGHT.rotated(rotation) * (50 - lock_time * 3)
+	position = Vector2.RIGHT.rotated(rotation) * (50 - lock_time )
 	
 	if lock_time > 0:
 		lock_time -= 1
 	elif Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT):
-		lock_time = 5
+		lock_time = 40
 		var new_proj = PROJECTILE.instantiate()
 		new_proj.get_node("TextureRect").texture = projectile_texture
 		new_proj.global_transform = global_transform

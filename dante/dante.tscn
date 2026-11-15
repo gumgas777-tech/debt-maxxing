@@ -1,17 +1,189 @@
 [gd_scene format=3 uid="uid://bmmc771fn5qhl"]
 
 [ext_resource type="Script" uid="uid://dl3tkgpwbjll" path="res://dante/dante.gd" id="1_lwbdl"]
-[ext_resource type="Texture2D" uid="uid://cfdga7xo7ycpf" path="res://dante/dante_sprite.png" id="2_itoxf"]
 [ext_resource type="PackedScene" uid="uid://deafttusoyx5v" path="res://weapons/ranged/ranged.tscn" id="2_wdung"]
+[ext_resource type="Texture2D" uid="uid://djlphtitp2bmg" path="res://Dicehead and Casino Asset Pack/Player/Player_idle/sprite_01.png" id="3_wuakt"]
+[ext_resource type="Texture2D" uid="uid://b4rt4upoytn2a" path="res://Dicehead and Casino Asset Pack/Player/Player_idle/sprite_02.png" id="4_k555f"]
+[ext_resource type="Texture2D" uid="uid://p7cm4c5np2gh" path="res://Dicehead and Casino Asset Pack/Player/Player_idle/sprite_03.png" id="5_4snxa"]
+[ext_resource type="Texture2D" uid="uid://dy55dv8cj1nbg" path="res://Dicehead and Casino Asset Pack/Player/Player_idle/sprite_04.png" id="6_qgiwx"]
+[ext_resource type="Texture2D" uid="uid://cnhyuis82un8x" path="res://Dicehead and Casino Asset Pack/Player/Player_idle/sprite_05.png" id="7_qel2s"]
+[ext_resource type="Texture2D" uid="uid://dtylye8neawyc" path="res://Dicehead and Casino Asset Pack/Player/Player_movement/sprite_09.png" id="8_vy0lv"]
+[ext_resource type="Texture2D" uid="uid://lxaoyo8ldrvo" path="res://Dicehead and Casino Asset Pack/Player/Player_movement/sprite_10.png" id="9_lfqeb"]
+[ext_resource type="Texture2D" uid="uid://jcl3jlm072dn" path="res://Dicehead and Casino Asset Pack/Player/Player_movement/sprite_11.png" id="10_d5j52"]
+[ext_resource type="Texture2D" uid="uid://brhj4s11m3kk6" path="res://Dicehead and Casino Asset Pack/Player/Player_movement/sprite_12.png" id="11_1pfbw"]
+[ext_resource type="Texture2D" uid="uid://blg3ywbsqp6oy" path="res://Dicehead and Casino Asset Pack/Player/Player_movement/sprite_13.png" id="12_prph4"]
+[ext_resource type="Texture2D" uid="uid://b7ko4dfvryhxo" path="res://Dicehead and Casino Asset Pack/Player/Player_movement/sprite_14.png" id="13_a4pgs"]
+[ext_resource type="Texture2D" uid="uid://b4diymkw363eu" path="res://Dicehead and Casino Asset Pack/Player/Player_movement/sprite_15.png" id="14_lrmqb"]
+[ext_resource type="Texture2D" uid="uid://uxiqmrgnlw0x" path="res://Dicehead and Casino Asset Pack/Player/Player_movement/sprite_16.png" id="15_vssme"]
+[ext_resource type="Texture2D" uid="uid://dt3tlcch1ftfy" path="res://Dicehead and Casino Asset Pack/Player/Player_movement/sprite_01.png" id="16_ii4wg"]
+[ext_resource type="Texture2D" uid="uid://dfvn2wowt4hi4" path="res://Dicehead and Casino Asset Pack/Player/Player_movement/sprite_02.png" id="17_7q6ew"]
+[ext_resource type="Texture2D" uid="uid://b7ua6ttt3c2an" path="res://Dicehead and Casino Asset Pack/Player/Player_movement/sprite_03.png" id="18_5vvwm"]
+[ext_resource type="Texture2D" uid="uid://dp6pglwdudmx8" path="res://Dicehead and Casino Asset Pack/Player/Player_movement/sprite_04.png" id="19_7qot1"]
+[ext_resource type="Texture2D" uid="uid://d2jr4pyie7x51" path="res://Dicehead and Casino Asset Pack/Player/Player_movement/sprite_05.png" id="20_svn0l"]
+[ext_resource type="Texture2D" uid="uid://diskjyf25d176" path="res://Dicehead and Casino Asset Pack/Player/Player_movement/sprite_06.png" id="21_61sct"]
+[ext_resource type="Texture2D" uid="uid://dpk5u7bmp8ptn" path="res://Dicehead and Casino Asset Pack/Player/Player_movement/sprite_07.png" id="22_5kwlg"]
+[ext_resource type="Texture2D" uid="uid://coo5tjna6fgh" path="res://Dicehead and Casino Asset Pack/Player/Player_movement/sprite_08.png" id="23_4k30n"]
+[ext_resource type="Texture2D" uid="uid://c8l5q01a1nfdk" path="res://Dicehead and Casino Asset Pack/Player/Player_movement/sprite_17.png" id="24_iqrht"]
+[ext_resource type="Texture2D" uid="uid://bmyvv7djusyen" path="res://Dicehead and Casino Asset Pack/Player/Player_movement/sprite_18.png" id="25_y3hka"]
+[ext_resource type="Texture2D" uid="uid://tdrh4jyxw4vd" path="res://Dicehead and Casino Asset Pack/Player/Player_movement/sprite_19.png" id="26_ubqpk"]
+[ext_resource type="Texture2D" uid="uid://c7jiuc4iwyc4e" path="res://Dicehead and Casino Asset Pack/Player/Player_movement/sprite_20.png" id="27_yk3re"]
+[ext_resource type="Texture2D" uid="uid://cxhcdqpav7l2x" path="res://Dicehead and Casino Asset Pack/Player/Player_movement/sprite_21.png" id="28_dt775"]
+[ext_resource type="Texture2D" uid="uid://srbvehllg238" path="res://Dicehead and Casino Asset Pack/Player/Player_movement/sprite_22.png" id="29_3l1ar"]
+[ext_resource type="Texture2D" uid="uid://cf3c1d5xdgla" path="res://Dicehead and Casino Asset Pack/Player/Player_movement/sprite_23.png" id="30_6c13t"]
+[ext_resource type="Texture2D" uid="uid://crr58qdry47hv" path="res://Dicehead and Casino Asset Pack/Player/Player_movement/sprite_24.png" id="31_6igrx"]
+[ext_resource type="Texture2D" uid="uid://dou55xdkqcrds" path="res://Dicehead and Casino Asset Pack/Player/Player_movement/sprite_25.png" id="32_j3mxn"]
+[ext_resource type="Texture2D" uid="uid://jw517xp2u4mt" path="res://Dicehead and Casino Asset Pack/Player/Player_movement/sprite_26.png" id="33_w4v53"]
+[ext_resource type="Texture2D" uid="uid://cr4mi6jxb1rer" path="res://Dicehead and Casino Asset Pack/Player/Player_movement/sprite_27.png" id="34_kicdr"]
+[ext_resource type="Texture2D" uid="uid://c56r1x4plso4c" path="res://Dicehead and Casino Asset Pack/Player/Player_movement/sprite_28.png" id="35_7wt8y"]
+[ext_resource type="Texture2D" uid="uid://c3s30jkli2d8w" path="res://Dicehead and Casino Asset Pack/Player/Player_movement/sprite_29.png" id="36_4gvps"]
+[ext_resource type="Texture2D" uid="uid://cnud11f4tpfsa" path="res://Dicehead and Casino Asset Pack/Player/Player_movement/sprite_30.png" id="37_uohit"]
+[ext_resource type="Texture2D" uid="uid://dcacyy2r5dwwj" path="res://Dicehead and Casino Asset Pack/Player/Player_movement/sprite_31.png" id="38_u0kbr"]
+[ext_resource type="Texture2D" uid="uid://cn40sfm8fiq07" path="res://Dicehead and Casino Asset Pack/Player/Player_movement/sprite_32.png" id="39_t3cf1"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_jemsq"]
 radius = 47.0
 
+[sub_resource type="SpriteFrames" id="SpriteFrames_sdd5f"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_wuakt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_k555f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_4snxa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_qgiwx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_qel2s")
+}],
+"loop": 1,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_vy0lv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_lfqeb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_d5j52")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_1pfbw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_prph4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_a4pgs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_lrmqb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_vssme")
+}],
+"loop": 1,
+"name": &"movement_back",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("16_ii4wg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_7q6ew")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_5vvwm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_7qot1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_svn0l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_61sct")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_5kwlg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_4k30n")
+}],
+"loop": 1,
+"name": &"movement_front",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("24_iqrht")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_y3hka")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_ubqpk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_yk3re")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_dt775")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_3l1ar")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_6c13t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_6igrx")
+}],
+"loop": 1,
+"name": &"movement_left",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("32_j3mxn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_w4v53")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_kicdr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_7wt8y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_4gvps")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_uohit")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_u0kbr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_t3cf1")
+}],
+"loop": 1,
+"name": &"movement_right",
+"speed": 5.0
+}]
+
 [node name="Node2D" type="CharacterBody2D" unique_id=2026038527]
 script = ExtResource("1_lwbdl")
-
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=496364042]
-texture = ExtResource("2_itoxf")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=324757149]
 shape = SubResource("CircleShape2D_jemsq")
@@ -20,4 +192,8 @@ shape = SubResource("CircleShape2D_jemsq")
 position = Vector2(50, -19)
 rotation = -1.6283922
 scale = Vector2(0.99999994, -0.99999994)
-type = null
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1561303150]
+scale = Vector2(2.835, 2.835)
+sprite_frames = SubResource("SpriteFrames_sdd5f")
+animation = &"movement_back"
