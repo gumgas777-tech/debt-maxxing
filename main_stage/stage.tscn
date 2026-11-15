@@ -15,6 +15,7 @@ offset_top = 15.0
 offset_right = 1783.7672
 offset_bottom = 1786.0
 texture = ExtResource("1_vurcd")
+metadata/_edit_use_anchors_ = true
 
 [node name="top_boundary" type="CollisionShape2D" parent="." unique_id=1487211825]
 position = Vector2(920.5, 39)

@@ -2,7 +2,7 @@ extends Node2D
 
 enum WEAPON { GUN, BOW }
 var projectile_texture:Texture2D
-
+@onready var sound_player: AudioStreamPlayer2D = $AudioStreamPlayer2D
 @export var type:WEAPON
 @export var GUN_TEXTURE:Texture2D
 @export var GUN_PROJECTILE_TEXTURE:Texture2D
@@ -32,6 +32,7 @@ func _process(delta:float):
 	elif Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT):
 		lock_time = 40
 		var new_proj = PROJECTILE.instantiate()
+		sound_player.play()
 		new_proj.get_node("TextureRect").texture = projectile_texture
 		new_proj.global_transform = global_transform
 		get_tree().current_scene.add_child(new_proj)
