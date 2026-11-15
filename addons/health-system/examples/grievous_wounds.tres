@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="HealMultiplierModifier" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/health-system/modifiers/heal_multiplier_modifier.gd" id="1_grievous"]
+
+[resource]
+resource_name = "Grievous Wounds"
+script = ExtResource("1_grievous")
+multiplier = 0.5
+only_heal_type = &""

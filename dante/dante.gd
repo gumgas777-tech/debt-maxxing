@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 enum DIRECTION { UP, LEFT, DOWN, RIGHT }
 
-
+var health = 100.0
 const SPEED = 30000.0
 
 func input_to_int(name):
@@ -20,3 +20,5 @@ func _physics_process(delta: float) -> void:
 		
 	velocity = direction.normalized() * delta * SPEED
 	move_and_slide()
+	
+	
