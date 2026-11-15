@@ -2,7 +2,6 @@ extends CharacterBody2D
 
 enum DIRECTION { UP, LEFT, DOWN, RIGHT }
 
-var health = 100.0
 const SPEED = 30000.0
 
 func input_to_int(name):

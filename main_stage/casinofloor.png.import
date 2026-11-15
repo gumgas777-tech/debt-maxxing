@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://k65cxb3ct6ng"
-path="res://.godot/imported/casino floor.png-5b8604a9c148d410d3b7337260eace2f.ctex"
+uid="uid://14ncwssh3lhr"
+path="res://.godot/imported/casinofloor.png-ae3fbc72cf80297ee67c95dff5b4cd35.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://casino floor.png"
-dest_files=["res://.godot/imported/casino floor.png-5b8604a9c148d410d3b7337260eace2f.ctex"]
+source_file="res://main_stage/casinofloor.png"
+dest_files=["res://.godot/imported/casinofloor.png-ae3fbc72cf80297ee67c95dff5b4cd35.ctex"]
 
 [params]
 

@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://mq46c4mm1400"]
+
+[ext_resource type="Texture2D" uid="uid://14ncwssh3lhr" path="res://main_stage/casinofloor.png" id="1_vurcd"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jemsq"]
+size = Vector2(2054.5, 202)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_d5u6a"]
+size = Vector2(245.5, 1787.5)
+
+[node name="StaticBody2D" type="StaticBody2D" unique_id=1515530248]
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1072825318]
+offset_top = 15.0
+offset_right = 1783.7672
+offset_bottom = 1786.0
+texture = ExtResource("1_vurcd")
+
+[node name="top_boundary" type="CollisionShape2D" parent="." unique_id=1487211825]
+position = Vector2(920.5, 39)
+shape = SubResource("RectangleShape2D_jemsq")
+
+[node name="bottom_boundary" type="CollisionShape2D" parent="." unique_id=1959409187]
+position = Vector2(922, 1782)
+shape = SubResource("RectangleShape2D_jemsq")
+
+[node name="right_boundary" type="CollisionShape2D" parent="." unique_id=1639986477]
+position = Vector2(1837.25, 921.25)
+shape = SubResource("RectangleShape2D_d5u6a")
+
+[node name="left_boundary" type="CollisionShape2D" parent="." unique_id=1427126408]
+position = Vector2(-44, 911)
+shape = SubResource("RectangleShape2D_d5u6a")
