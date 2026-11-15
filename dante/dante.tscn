@@ -7,7 +7,7 @@
 [sub_resource type="CircleShape2D" id="CircleShape2D_jemsq"]
 radius = 19.026299
 
-[node name="Node2D" type="CharacterBody2D" unique_id=2026038527]
+[node name="Node2D" type="CharacterBody2D" unique_id=2026038527 groups=["player"]]
 script = ExtResource("1_lwbdl")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=496364042]

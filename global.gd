@@ -2,6 +2,7 @@ extends Control
 
 var money = 0
 var player_health = 100
+var max_health = 100
 
 var crit_chance = 0.01
 var crit_mult = 2
@@ -14,6 +15,9 @@ var loot_table = {
 	"epic": ["last_stand"],
 	"legendary": ["full_house"]
 }
+
+var kills = 0
+var kill_req = 20
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:

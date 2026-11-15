@@ -5,6 +5,7 @@
 [ext_resource type="Script" uid="uid://yry70ibe76hw" path="res://camera_2d.gd" id="3_h2yge"]
 [ext_resource type="PackedScene" uid="uid://mq46c4mm1400" path="res://main_stage/stage.tscn" id="3_lquwl"]
 [ext_resource type="PackedScene" uid="uid://b5tdhlt6ked3i" path="res://Evilguys/evilguy_1.tscn" id="4_1bvp3"]
+[ext_resource type="PackedScene" uid="uid://c6cw1t62wdg78" path="res://gui/gui.tscn" id="6_7mycd"]
 
 [node name="Node2D" type="Node2D" unique_id=1539095433]
 script = ExtResource("1_1bvp3")
@@ -18,6 +19,12 @@ position = Vector2(635, 330)
 [node name="Camera2D" type="Camera2D" parent="dante" unique_id=1615721821]
 position = Vector2(-6, 14)
 script = ExtResource("3_h2yge")
+
+[node name="gui" parent="dante/Camera2D" unique_id=968445883 instance=ExtResource("6_7mycd")]
+offset_left = -576.0
+offset_top = -325.0
+offset_right = 567.0
+offset_bottom = 318.0
 
 [node name="Timer" type="Timer" parent="." unique_id=1211949202]
 autostart = true

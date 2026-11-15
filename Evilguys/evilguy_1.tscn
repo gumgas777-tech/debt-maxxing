@@ -2,12 +2,14 @@
 
 [ext_resource type="Texture2D" uid="uid://bknh3o8p37eq8" path="res://Evilguys/Evilguys.png" id="1_j48bt"]
 [ext_resource type="Script" uid="uid://l3k0ly7xrg4b" path="res://Evilguys/evilguy_1.gd" id="1_ribqn"]
+[ext_resource type="PackedScene" uid="uid://dnnv20lchrib6" path="res://shop_stuff/shop.tscn" id="2_2l05q"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_sdd5f"]
 radius = 49.729267
 
 [node name="Evilguy1" type="CharacterBody2D" unique_id=1941640205]
 script = ExtResource("1_ribqn")
+shop = ExtResource("2_2l05q")
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=777825979]
 offset_left = -51.0

@@ -45,4 +45,5 @@ func _on_legendary_pressed() -> void:
 func _on_timer_timeout() -> void:
 	var rng = RandomNumberGenerator.new()
 	var rarity = ["common", "rare", "epic", "legendary"][rng.rand_weighted(probabilities)]
+	var options = Global.loot_table[rarity]
 	
