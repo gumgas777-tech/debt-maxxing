@@ -1,18 +1,16 @@
 [gd_scene format=3 uid="uid://blyl5eixt6b6g"]
 
-[ext_resource type="Texture2D" uid="uid://14ncwssh3lhr" path="res://casinofloor.png" id="1_h2yge"]
+[ext_resource type="Script" uid="uid://bcnrf7we1blaq" path="res://main_stage/stage.gd" id="1_1bvp3"]
 [ext_resource type="PackedScene" uid="uid://bmmc771fn5qhl" path="res://dante/dante.tscn" id="2_h2yge"]
 [ext_resource type="Script" uid="uid://yry70ibe76hw" path="res://camera_2d.gd" id="3_h2yge"]
+[ext_resource type="PackedScene" uid="uid://mq46c4mm1400" path="res://main_stage/stage.tscn" id="3_lquwl"]
 [ext_resource type="PackedScene" uid="uid://b5tdhlt6ked3i" path="res://Evilguys/evilguy_1.tscn" id="4_1bvp3"]
 
 [node name="Node2D" type="Node2D" unique_id=1539095433]
+script = ExtResource("1_1bvp3")
+evil_guy = ExtResource("4_1bvp3")
 
-[node name="TextureRect" type="TextureRect" parent="." unique_id=1023258883]
-offset_left = 166.0
-offset_top = -20.0
-offset_right = 1144.0
-offset_bottom = 951.0
-texture = ExtResource("1_h2yge")
+[node name="stage" parent="." unique_id=1515530248 instance=ExtResource("3_lquwl")]
 
 [node name="dante" parent="." unique_id=2026038527 instance=ExtResource("2_h2yge")]
 position = Vector2(635, 330)
@@ -21,4 +19,7 @@ position = Vector2(635, 330)
 position = Vector2(-6, 14)
 script = ExtResource("3_h2yge")
 
-[node name="Evilguy1" parent="." unique_id=1941640205 instance=ExtResource("4_1bvp3")]
+[node name="Timer" type="Timer" parent="." unique_id=1211949202]
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

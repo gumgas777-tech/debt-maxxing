@@ -41,7 +41,7 @@
 [ext_resource type="Texture2D" uid="uid://cn40sfm8fiq07" path="res://Dicehead and Casino Asset Pack/Player/Player_movement/sprite_32.png" id="39_t3cf1"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_jemsq"]
-radius = 47.0
+radius = 19.026299
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_sdd5f"]
 animations = [{
@@ -185,6 +185,13 @@ animations = [{
 [node name="Node2D" type="CharacterBody2D" unique_id=2026038527]
 script = ExtResource("1_lwbdl")
 
+<<<<<<< HEAD
+=======
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=496364042]
+scale = Vector2(0.40425533, 0.4042553)
+texture = ExtResource("2_itoxf")
+
+>>>>>>> 2707546b0abe0f6b002616e038111d7880dde41e
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=324757149]
 shape = SubResource("CircleShape2D_jemsq")
 

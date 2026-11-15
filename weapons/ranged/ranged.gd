@@ -35,4 +35,3 @@ func _process(delta:float):
 		new_proj.get_node("TextureRect").texture = projectile_texture
 		new_proj.global_transform = global_transform
 		get_tree().current_scene.add_child(new_proj)
-		

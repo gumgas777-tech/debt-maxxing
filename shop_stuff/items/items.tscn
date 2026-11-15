@@ -1,0 +1,188 @@
+[gd_scene format=3 uid="uid://f40hom10745p"]
+
+[ext_resource type="Script" uid="uid://bfl5bkscoghpb" path="res://shop_stuff/items/exit.gd" id="1_1aejy"]
+[ext_resource type="Script" uid="uid://bhlk04lj05a2f" path="res://shop_stuff/items/lootboxscreen.gd" id="2_pnlgp"]
+[ext_resource type="Texture2D" uid="uid://dvt7d5k70xbpa" path="res://shop_stuff/items/common.png" id="3_s24bk"]
+[ext_resource type="Texture2D" uid="uid://b0j5jnx1rrko8" path="res://shop_stuff/items/rare.png" id="4_s20sm"]
+[ext_resource type="Texture2D" uid="uid://w15jfw2lay6u" path="res://shop_stuff/items/epic.png" id="5_n5eej"]
+[ext_resource type="Texture2D" uid="uid://bahesdrl2h31k" path="res://shop_stuff/items/legendary.png" id="6_eye2y"]
+
+[node name="Items" type="Control" unique_id=139809605]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1663518476]
+layout_mode = 0
+offset_right = 1169.0
+offset_bottom = 667.0
+color = Color(0, 0, 0, 0.36862746)
+
+[node name="Control" type="Control" parent="." unique_id=2026192611]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="common" type="Button" parent="Control" unique_id=1601675122]
+layout_mode = 0
+offset_left = 148.0
+offset_top = 249.0
+offset_right = 290.0
+offset_bottom = 307.0
+text = "Common lootbox"
+
+[node name="Label" type="Label" parent="Control/common" unique_id=1213599000]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 60.0
+offset_right = 119.0
+offset_bottom = 180.0
+text = "80% common
+15 rare%
+5 percent epic
+0 legendaries"
+
+[node name="price" type="Label" parent="Control/common" unique_id=1019821197]
+layout_mode = 0
+offset_left = 22.0
+offset_top = -45.0
+offset_right = 126.0
+offset_bottom = -1.0
+theme_override_colors/font_color = Color(1, 1, 0, 1)
+theme_override_font_sizes/font_size = 31
+text = "5 coins"
+
+[node name="rare" type="Button" parent="Control" unique_id=1699332473]
+layout_mode = 0
+offset_left = 340.0
+offset_top = 249.0
+offset_right = 482.0
+offset_bottom = 307.0
+text = "Rare lootbox"
+
+[node name="Label" type="Label" parent="Control/rare" unique_id=861223933]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 60.0
+offset_right = 119.0
+offset_bottom = 180.0
+text = "60% common
+25 rare%
+10 percent epic
+5 legendari chance"
+
+[node name="price" type="Label" parent="Control/rare" unique_id=1143222285]
+layout_mode = 0
+offset_left = 14.0
+offset_top = -47.0
+offset_right = 135.0
+offset_bottom = -3.0
+theme_override_colors/font_color = Color(1, 1, 0, 1)
+theme_override_font_sizes/font_size = 31
+text = "10 coins"
+
+[node name="epic" type="Button" parent="Control" unique_id=1658856006]
+layout_mode = 0
+offset_left = 556.0
+offset_top = 251.0
+offset_right = 698.0
+offset_bottom = 309.0
+text = "epic games"
+
+[node name="Label" type="Label" parent="Control/epic" unique_id=360800316]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 60.0
+offset_right = 119.0
+offset_bottom = 180.0
+text = "30% common
+40 rare%
+20 percent epic
+10 legendari probability"
+
+[node name="price" type="Label" parent="Control/epic" unique_id=929558691]
+layout_mode = 0
+offset_left = 22.0
+offset_top = -45.0
+offset_right = 126.0
+offset_bottom = -1.0
+theme_override_colors/font_color = Color(1, 1, 0, 1)
+theme_override_font_sizes/font_size = 31
+text = "20 coins"
+
+[node name="legendary" type="Button" parent="Control" unique_id=2128348110]
+layout_mode = 0
+offset_left = 802.0
+offset_top = 256.0
+offset_right = 950.0
+offset_bottom = 314.0
+text = "legendary lootbox"
+
+[node name="Label" type="Label" parent="Control/legendary" unique_id=1281617913]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 60.0
+offset_right = 119.0
+offset_bottom = 180.0
+text = "5% common (imagine lol)
+30 rare%
+40 percent epic
+25 legendari prossbility"
+
+[node name="price" type="Label" parent="Control/legendary" unique_id=174064843]
+layout_mode = 0
+offset_left = 22.0
+offset_top = -45.0
+offset_right = 126.0
+offset_bottom = -1.0
+theme_override_colors/font_color = Color(1, 1, 0, 1)
+theme_override_font_sizes/font_size = 31
+text = "40 coins"
+
+[node name="exit" type="Button" parent="Control" unique_id=2012220603]
+layout_mode = 0
+offset_left = 472.0
+offset_top = 550.0
+offset_right = 593.0
+offset_bottom = 623.0
+text = "nah bro id win"
+script = ExtResource("1_1aejy")
+
+[node name="lootboxscreen" type="Control" parent="." unique_id=1691850534]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("2_pnlgp")
+common_texture = ExtResource("3_s24bk")
+rare_texture = ExtResource("4_s20sm")
+epic_texture = ExtResource("5_n5eej")
+legendary_texture = ExtResource("6_eye2y")
+
+[node name="TextureRect" type="TextureRect" parent="lootboxscreen" unique_id=2136965501]
+layout_mode = 0
+offset_left = 469.0
+offset_top = 296.0
+offset_right = 591.0
+offset_bottom = 385.0
+texture = ExtResource("3_s24bk")
+
+[node name="Timer" type="Timer" parent="lootboxscreen" unique_id=1275466440]
+one_shot = true
+
+[node name="Label" type="Label" parent="lootboxscreen" unique_id=1023588131]
+layout_mode = 0
+offset_left = 456.0
+offset_top = 413.0
+offset_right = 607.0
+offset_bottom = 436.0
+text = "Opening in 0.563s..."
+
+[connection signal="pressed" from="Control/common" to="lootboxscreen" method="_on_common_pressed"]
+[connection signal="pressed" from="Control/rare" to="lootboxscreen" method="_on_rare_pressed"]
+[connection signal="pressed" from="Control/epic" to="lootboxscreen" method="_on_epic_pressed"]
+[connection signal="pressed" from="Control/legendary" to="lootboxscreen" method="_on_legendary_pressed"]
+[connection signal="timeout" from="lootboxscreen/Timer" to="lootboxscreen" method="_on_timer_timeout"]

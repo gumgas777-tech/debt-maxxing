@@ -3,7 +3,6 @@ extends CharacterBody2D
 enum DIRECTION { UP, LEFT, DOWN, RIGHT }
 var direction:Vector2
 
-var health = 100.0
 const SPEED = 30000.0
 
 func _ready() -> void:
